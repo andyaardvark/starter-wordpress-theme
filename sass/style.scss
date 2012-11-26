@@ -1,0 +1,97 @@
+/*
+Theme Name: Aardvark Base
+Theme URI: http://www.aardvarkmedia.co.uk/
+Description: Bare bones resonsive Wordpress theme with SASS
+Author: Andy Marciniak
+Version: 1.0
+*/
+
+
+
+// 1. ROOT 					==============================
+
+// Compass
+@import "compass";
+
+// CSS reset
+@import "reset";
+
+// Variables and mixins
+@import "variables";
+@import "mixins";
+
+@import "bourbon";
+
+// Site wide styles (html, body)
+@import "site";
+
+// Grid
+@import "grid";
+
+// 2. TYPOGRAPHY 			==============================
+
+// Block level (h1, p) and text-level (em, strong) type
+@import "typography";
+
+// 3. COLOUR 				==============================
+
+// Colour interaction semantics
+@import "colour";
+
+// 4. TEXTURE 				==============================
+
+// Alerts, badges, boxes and gradients
+@import "texture";
+
+// 5. ELEMENTS 				==============================
+
+// Figures, images and other elements
+@import "elements";
+
+// Standard form controls
+@import "forms";
+
+// Button styles (optional)
+@import "buttons";
+
+// 6. LAYOUT 			==============================
+
+// Page level layout styles (banner, navigation, content, contentinfo)
+@import "page";
+
+//  7. TEMPLATE SPECIFICS 	==============================
+
+
+
+//  8. MEDIA QUERIES 		==============================
+
+// 1382px
+@media only screen and (max-width: 1382px) {
+@import "1382";
+}
+
+// 992px
+@media only screen and (max-width: 992px) {
+@import "992";
+}
+
+// 768px
+@media only screen and (max-width: 768px) {
+@import "768";
+}
+
+// 600px
+@media only screen and (max-width: 600px) {
+@import "600";
+}
+
+// 480px
+@media only screen and (max-width: 480px) {
+@import "480";
+}
+
+// Print
+@media print {
+@import "print";
+}
+
