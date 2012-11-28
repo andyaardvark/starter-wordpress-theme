@@ -68,6 +68,7 @@
 	/** Add scripts via wp_head() */
 
 	function script_enqueuer() {
+	wp_deregister_script('jquery');
 	wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', array( 'jquery' ), '1.0', true );
 		wp_register_script( 'settings', get_template_directory_uri().'/js/settings.js', array( 'jquery' ), '1.0', true  );
 		wp_enqueue_script( 'jquery' );
